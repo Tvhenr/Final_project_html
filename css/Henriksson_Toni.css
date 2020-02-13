@@ -1,0 +1,414 @@
+/* 
+    Created on : 10.1.2020, 12:46:23
+    Author     : tonvi
+*/
+
+/**
+Yleinen määrittely, jotka kaikilla sivuilla
+värit:
+#1a1a1a
+#808080
+#b3b3b3
+#bfbfbf
+**/
+
+/** sivun pohja: sisältää header, nav, article ja footer -osat 
+(pysyy saman kaikilla sivuilla)
+**/
+body {
+    background-color: #bfbfbf; 
+}
+
+div {
+    max-width: 1000px;
+    border: 3px #1a1a1a solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: goldenrod
+}
+
+h1 {
+    font-family: Georgia; 
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+
+/**Yleiset määritykset alaotsikoilla. Näitä muutellaan eri sivuilla
+**/
+h2 {
+    text-align: left;
+    font-weight: bold;
+    font-family: Georgia;
+    font-size: large;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/** Headerissa otsikko ja nav (pysyy saman kaikilla sivuilla)
+**/
+header {    
+    border: 3px #b3b3b3 solid;
+    text-align: center;
+    margin: 1em;
+    line-height: 5em;
+    background-color: #1a1a1a;
+}
+
+/** nav osassa linkit eri osioihin (pysyy saman kaikilla sivuilla)
+**/
+nav {
+    border: 3px goldenrod solid;
+    margin: 1em;
+    line-height: 4em;
+    background-color: #808080;
+}
+
+nav li {
+    display: inline-block;
+    font-family: Georgia;
+}
+
+nav li a {
+    padding-left: 2em; 
+    padding-right: 2em;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+/** article osa muuttuu eri sivuilla, tässä yleiset määrittelyt, jotka
+pysyy saman kaikilla sivuilla
+**/
+article {
+    border: 3px #b3b3b3 solid;
+    line-height: 2em;
+    margin: 1em;
+    text-align: left;
+    font-family: Verdana;
+    background-color: white;
+}
+
+/** footer on sivun alaosa (pysyy saman kaikilla sivuilla)
+**/
+footer {
+    border: 3px #b3b3b3 solid;
+    line-height: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background-color: #1a1a1a;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+/** footer jaettu kahteen laatikkoon class-avulla, jotta saatu tekstit eri puolille
+**/
+footer ul .tiedot1 {
+    border: 2px goldenrod solid;
+    line-height: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: Verdana;
+    padding-left: 1em;
+    background-color: #808080;
+    color: white;
+}
+
+footer ul .tiedot2 {
+    border: 2px goldenrod solid;
+    line-height: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: Verdana;
+    text-align: right;
+    padding-right: 1em;
+    background-color: #808080;
+    color: white;
+}
+
+/**alla "itseestäni" sivun tyylit
+**/
+.minä {
+    font-family: Verdana;
+    background-color: #1a1a1a;
+}
+
+.minä h2 {
+    font-weight: bold;
+    font-family: Georgia;
+    font-style: italic;
+    color: black;
+    margin-bottom: 1em;
+}
+
+/**tehty kaksi luokkaa .laatikko, jotta saatu teksti ja valokuva 
+**/
+
+.minä li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.minä .laatikko2 {
+    padding: 2em;
+    border: 3px goldenrod solid;
+    background-color: white;
+    border-radius: 20%;
+}
+
+.minä .laatikko1 figure img {
+    border: 2px goldenrod solid;
+}
+
+.minä img {
+    max-width: 100%; 
+}
+
+.minä figcaption {
+    color: white;
+}
+
+.minä a {
+    text-decoration: none;
+    color: #29157E;
+    font-weight: bold;
+}
+
+.minä .tyyli {
+    font-family: Georgia;
+    font-style: italic;
+}
+
+/**
+alla "opinnot" sivun tyylit
+**/
+.opiskelu h2 {
+    color: black;
+    margin: 2em;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.opiskelu h3 {
+    margin-left: 2em;
+}
+
+.opiskelu p {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.opiskelu address {
+    margin-left: 2em;
+}
+
+.opiskelu .opinnot table {
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+/** taulukon 3 riviä eri värillä
+**/
+[colspan="2"] {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/** joka toisen rivin värittäminen eri väriseksi
+**/
+tr:nth-child(even) {
+    background-color: #808080; 
+}
+
+tr:nth-child(odd) {
+    background-color: #bfbfbf; 
+}
+
+.opiskelu table {
+    width: 30em;
+}
+
+.opiskelu td {
+    padding-left: 1em;
+}
+
+.opiskelu th {
+    padding-left: 1em;
+}
+
+.opiskelu a {
+    color: goldenrod;
+    font-style: italic;
+}
+
+/**alla "vapaa-aika" sivun tyylit
+**/
+.turku {
+    background-color: #1a1a1a;
+}
+
+.turku h2 {
+    margin: 2em;
+    text-align: center;
+    color: white;
+}
+
+.turku .list {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    width: 26%;
+    background-color: #1a1a1a;
+}
+
+.turku .list a {
+    text-decoration: none;
+    color: goldenrod;
+    font-style: italic;
+}
+
+.turku .list h3 {
+    color: black;
+    text-align: center;
+    background-color: goldenrod;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0.5em;
+    border-top: 3px #808080 solid;
+    border-left: 3px #808080 solid;
+    border-right: 3px #808080 solid;
+}
+
+.turku .list ol {
+    list-style-type: upper-roman;
+    margin-bottom: 1em;
+    background-color: white;
+    list-style-position: inside;
+    padding: 1em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 3px #808080 solid;
+    border-right: 3px #808080 solid;
+    border-bottom: 3px #808080 solid; 
+}
+
+.turku .list .list1 {
+    list-style-type: disc;    
+    background-color: white;
+    list-style-position: inside;
+    padding: 1em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 3px #808080 solid;
+    border-right: 3px #808080 solid;
+    border-bottom: 3px #808080 solid;
+}
+
+.turku .list .list2 {
+    margin-left: 2em;
+    list-style-type: circle;
+}
+
+.turku .list .list3 {
+    list-style-type: square;
+    margin-bottom: 1em;
+    background-color: white;
+    list-style-position: inside;
+    padding: 1em;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 3px #808080 solid;
+    border-right: 3px #808080 solid;
+    border-bottom: 3px #808080 solid;
+}
+
+.turku .list .list4 {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
+/**alla "kuvat" sivun tyylit
+**/
+.kuvat {
+    background-color: #1a1a1a;
+}    
+
+.kuvat h2 {
+    color: white;
+    margin: 2em;
+    text-align: center;   
+}
+
+.kuvat .images li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+.kuvat .images li img {
+    width: 100%;
+    border: 3px goldenrod solid;
+    border-radius: 10%;
+}
+
+/**alla "yhteydenotto" sivun tyylit
+**/
+.yhteydenotto {
+    background-color: #1a1a1a;
+}
+
+.yhteydenotto h2 {
+    color: white;
+    margin: 2em;
+}
+
+.yhteydenotto1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    color: white;
+}
+.yhteydenotto2 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    color: white;
+}
+.yhteydenotto3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    color: white;    
+}
+
+.yhteydenotto4 {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    color: white;    
+}

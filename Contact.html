@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Kontakti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Henriksson_Toni">
+        <link href="css/css-reset.css" rel="stylesheet" >
+        <link href="css/Henriksson_Toni.css" rel="stylesheet" >
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>Front-end ohjelmoinnin opinnot</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Itsestäni</a>
+                        </li>
+                        <li>
+                            <a href="Studying.html">Opinnot</a>
+                        </li>
+                        <li>
+                            <a href="Leisure.html">Vapaa-aika</a>
+                        </li>
+                        <li>
+                            <a href="Images.html">Kuvat</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Yhteydenotto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article class="yhteydenotto">
+                <h2>Yhteydenotto</h2>
+                <hr>
+                <section class="yhteydenotto1">
+                    <label for="Etunimi">Etunimi:</label> <br>
+                    <input type="text" id="Etunimi">
+                </section>
+                <section class="yhteydenotto1">
+                    <label for="Sukunimi">Sukunimi:</label> <br>
+                    <input type="text" id="Sukunimi">
+                </section> <br>
+                <section class="yhteydenotto1">
+                    <label for="Sähköposti">Sähköposti:</label> <br>
+                    <input type="text" id="Sähköposti">
+                </section>
+                <section class="yhteydenotto1">
+                    <label for="Puhelin">Puhelin:</label> <br>
+                    <input type="text" id="Puhelin">
+                </section> <br>
+
+                <section class="yhteydenotto2">
+                    <p>Yhteydenoton aihe:</p>
+                    <label>
+                        <input type='radio' name="OhjelmistontilausorVikailmoitusorMuu"
+                               id="Ohjelmiston_tilaus" value="">Ohjelmiston tilaus
+                    </label> <br>                
+                    <label>
+                        <input type='radio' name="OhjelmistontilausorVikailmoitusorMuu"
+                               id="Vikailmoitus" value="">Vikailmoitus
+                    </label> <br>
+                    <label>
+                        <input type='radio' name="OhjelmistontilausorVikailmoitusorMuu"
+                               id="Muu" value="">Muu
+                    </label> <br>
+                </section>
+
+                <section class="yhteydenotto2">
+                    <p>Yhteydenotto tapa:</p>
+                    <label>
+                        <input type='checkbox' name="tapa[]" value="sähköposti">Sähköposti
+                    </label> <br>
+                    <label>
+                        <input type='checkbox' name="tapa[]" value="puhelin">Puhelin
+                    </label> <br>
+                </section>
+
+                <section class="yhteydenotto3">
+                    <label for="Viestin_aihe">Viestin aihe:</label> <br>
+                    <input id="text" maxlength="20">
+                </section> 
+
+                <section class="yhteydenotto4">
+                    <label for="Viesti">Viesti:</label> <br>
+                    <textarea id="Viesti" rows="10" cols="40"></textarea> <br>
+                </section>
+
+                <section class="yhteydenotto4">
+                    <input type="Submit" value="Lähetä">
+                    <input type="Reset" value="Tyhjennä">
+                </section>
+
+
+            </article>
+            <footer>
+                <ul>
+                    <li class="tiedot1">Toni Henriksson <br> 2020</li>
+                </ul>
+                <ul>
+                    <li class="tiedot2">Lopputyö <br> Highway to code <br>
+                        html ja css kurssi</li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
